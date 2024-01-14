@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 ENV PYTHONBUFFERED 1
 RUN apt-get update -y &&\
     apt-get install -y python3.8 python3-pip git &&\
-    pip install pandas pytest
+    pip install pandas pytest factory_boy
 
 WORKDIR /app
 COPY src/ /app/src/
